@@ -1,0 +1,36 @@
+The default recursive directory scanning is pretty simple and it is
+just a dfs (Depth First Search).
+
+But it make sense to use multiple cores to speedup the directory
+traversal.
+
+And at this point we have a difficulty to manage several threads. To
+do this we need to choose some strategy. Below will be produced some
+of this stratetegy that may be already exists or not (who knows).
+
+
+The strategy.
+
+<<<<<<< HEAD
+---
+=======
+>>>>>>> 970a199 (add algo)
+Like in the simple dfs algo we are met the leaf of the branch.
+If branch has more the maxLeafs (max leafs at the branch) it means
+that we can run algo in a new thread at the prev level.
+
+<<<<<<< HEAD
+What we solve? We solve the problem that in one level we can not to
+easily say how much files we have and properly divide it. Thats why we
+use a trick with levels.
+
+
+The question: how will we concatenate properly the result from a
+different threads?
+---
+
+
+=======
+The question: how will we concatenate properly the result from a
+different threads?
+>>>>>>> 970a199 (add algo)
