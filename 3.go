@@ -56,7 +56,7 @@ func _3(base string, prefix string) {
 
 func isDirOk(entry os.DirEntry) bool {
 	switch entry.Name() {
-	case ".git", "__pycache__", ".idea", ".pytest_cache":
+	case ".git", "__pycache__", ".idea", ".pytest_cache", ".venv":
 		return false
 	}
 	return true
